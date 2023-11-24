@@ -26,3 +26,7 @@ Route::delete('/users/{id}', [UserController::class, 'destroy']);
 
 // route for points
 Route::put('/users/{user_id}/update-points/{points}/{operation_type}', [UserController::class, 'update_points']);
+
+Route::get('/users', [UserController::class, 'index']);
+
+Route::post('/login', [UserController::class, 'loginApi']);
