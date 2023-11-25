@@ -1,0 +1,40 @@
+Configuración del Backend (Laravel - XAMPP)
+
+Clona este repositorio en tu sistema local.
+Abre la carpeta back en tu editor de código favorito.
+Copia el archivo .env.example y pégalo como .env.
+Configura tu archivo .env con la información de tu base de datos y otros parámetros necesarios.
+Abre XAMPP y asegúrate de que Apache y MySQL estén activos.
+Ejecuta las migraciones de Laravel para configurar la base de datos:
+bash
+Copy code
+cd back
+php artisan migrate
+Esto creará las tablas necesarias en tu base de datos configurada.
+
+Ejecuta el servidor de Laravel:
+bash
+Copy code
+php artisan serve
+El backend estará disponible en http://localhost:8000.
+
+
+
+
+Configuración del Frontend (React - Vite)
+
+Abre una nueva ventana de la terminal.
+Navega hasta la carpeta front en el repositorio clonado.
+Instala las dependencias de Node.js:
+bash
+Copy code
+cd front
+npm install
+Inicia el entorno de desarrollo de React con Vite:
+bash
+Copy code
+npm run dev
+El frontend estará disponible en http://localhost:3000.
+
+Para conectar el frontend al backend, asegúrate de configurar las llamadas a la API con la URL correcta del servidor backend (por lo general, http://localhost:8000 si estás utilizando el servidor de desarrollo de Laravel).
+Explora el frontend interactuando con la aplicación desde tu navegador web, accediendo a http://localhost:3000.
