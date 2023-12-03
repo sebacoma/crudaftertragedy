@@ -12,6 +12,7 @@ Configura la base de datos en el archivo .env
 
 php artisan migrate
 
+Y después el php artisan serve
 
 
 ---------------------
